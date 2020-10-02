@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/design_default_color_background"
+    tools:context=".activities.SignUpActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_sign_up_activity"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="?attr/actionBarSize">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="SIGN UP"
+            android:textColor="@color/primary_text_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:src="@drawable/undraw_authentication_fsn5"
+            android:text="@string/register_here"
+            android:textColor="@color/secondary_text_color"
+            android:textSize="24sp" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:elevation="3dp"
+            app:cardCornerRadius="8dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:hint="@string/name"
+                        android:paddingStart="10dp"
+                        android:textColor="@color/primary_text_color"
+                        android:background="@drawable/white_background_rounded"
+                        android:inputType="textPersonName"
+                        android:textSize="18sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:hint="Email"
+                        android:paddingStart="10dp"
+                        android:textColor="@color/primary_text_color"
+                        android:background="@drawable/white_background_rounded"
+                        android:inputType="textPersonName"
+                        android:textSize="18sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:hint="Password"
+                        android:paddingStart="10dp"
+                        android:textColor="@color/primary_text_color"
+                        android:background="@drawable/white_background_rounded"
+                        android:inputType="textPassword"
+                        android:textSize="18sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/btn_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/shape_button_rounded"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:text="Sign UP"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>
